@@ -27,7 +27,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-, "src/app/components/FormInstallPool/FormInstallPool.jsx", "src/app/page.jsx", "src/app/components/layouts/CustomCarousel/CarouselBanner.jsx", "src/app/components/layouts/CustomCarousel/CarouselBanner.style.jsx", "src/app/components/layouts/CustomCarousel/CustomCarousel.style.jsx", "src/app/components/layouts/CustomCarousel/CustomCarousel.jsx"  ],
+, "src/app/components/FormInstallPool/FormInstallPool.jsx", "src/app/page.jsx", "src/app/components/layouts/CustomCarousel/CarouselBanner.jsx", "src/app/components/layouts/CustomCarousel/CarouselBanner.style.jsx", "src/app/components/layouts/CustomCarousel/CustomCarousel.style.jsx", "src/app/components/layouts/CustomCarousel/CustomCarousel.jsx", "src/app/components/ProductList/ProductList.style.jsx", "src/app/components/ProductList/ProductList.component.jsx"  ],
   "exclude": [
     "node_modules"
   ]

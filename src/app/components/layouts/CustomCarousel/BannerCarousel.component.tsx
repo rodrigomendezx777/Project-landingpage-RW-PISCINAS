@@ -12,13 +12,13 @@ const CarouselContainer = styled.div`
 
   .slick-slide {
     transition: all 0.3s ease;
-    cursor: grab;
   }
 
   .slick-slide img {
     width: 100%;
     height: auto;
     object-fit: cover;
+    cursor: grab;
   }
 
   .slick-prev,

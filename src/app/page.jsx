@@ -1,6 +1,7 @@
 import BannerCarousel from './components/layouts/CustomCarousel/BannerCarousel.component';
 import TestimonialCarousel from './components/Testimonials/TestimonialCarousel';
 import FAQAccordion from './components/FAQAccordion/FAQAccordion'
+import ProductList from './components/ProductList/ProductList.component'
 
 
 export default function Home() {
@@ -21,11 +22,15 @@ export default function Home() {
 
 
 
+
   return (
   <>
     <BannerCarousel images={images} />
     <TestimonialCarousel testimonials={testimonials} />
+    <ProductList />
     <FAQAccordion />
+
+    
     
   
   </>

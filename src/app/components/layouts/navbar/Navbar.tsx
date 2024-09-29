@@ -36,7 +36,12 @@ const Navbar: React.FC = () => {
 
   return (
     <NavbarContainer>
-      <Logo> <a href="/">RW PISCINAS</a>RW PISCINAS</Logo>
+      <Logo> 
+        <a href="/">
+          <img src="/images/Logo/logo_rw.png" alt="Logo RW Piscinas" />
+          
+        </a>RW PISCINAS
+      </Logo>
       <NavMenu>
         <NavItem href="/">Home</NavItem>
         <NavItem href="/About">Sobre</NavItem>
