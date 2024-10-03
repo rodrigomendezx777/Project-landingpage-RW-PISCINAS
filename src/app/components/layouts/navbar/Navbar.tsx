@@ -14,10 +14,10 @@ import {
 } from './Navbar.style';
 
 const Navbar: React.FC = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [$isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
-    setIsOpen(!isOpen);
+    setIsOpen(!$isOpen);
   };
 
   // Fechar o menu quando a tela for redimensionada para um tamanho maior
@@ -48,10 +48,10 @@ const Navbar: React.FC = () => {
         <NavItem href="/Contact">Contato</NavItem>
       </NavMenu>
       <MobileMenuIcon onClick={toggleMenu}>
-        {isOpen ? <FiX size={24} /> : <FiMenu size={24} />}
+        {$isOpen ? <FiX size={24} /> : <FiMenu size={24} />}
       </MobileMenuIcon>
 
-      {isOpen && (
+      {$isOpen && (
         <MobileNavMenu>
           <NavItem href="/">Home</NavItem>
           <NavItem href="/About">Sobre</NavItem>

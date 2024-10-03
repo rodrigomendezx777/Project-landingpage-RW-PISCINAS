@@ -31,7 +31,7 @@ const FAQAccordion = () => {
                     <Question>{faq.question}</Question>
                     {activeIndex === index ? <FiChevronUp size={24} /> : <FiChevronDown size={24} />}
                 </AccordionHeader>
-                <AccordionContent isOpen={activeIndex === index}>
+                <AccordionContent $isOpen={activeIndex === index}>
                     <Answer>{faq.answer}</Answer>
                 </AccordionContent>
                 </AccordionItem>
@@ -101,10 +101,10 @@ const Question = styled.h3`
 `;
 
 const AccordionContent = styled.div`
-  max-height: ${({ isOpen }) => (isOpen ? '150px' : '0')};
+  max-height: ${({ $isOpen }) => ($isOpen ? '150px' : '0')};
   overflow: hidden;
   transition: max-height 0.3s ease, padding 0.3s ease;
-  padding: ${({ isOpen }) => (isOpen ? '15px' : '0 15px')};
+  padding: ${({ $isOpen }) => ($isOpen ? '15px' : '0 15px')};
 `;
 
 const Answer = styled.p`
