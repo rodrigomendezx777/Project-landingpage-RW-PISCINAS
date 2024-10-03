@@ -11,7 +11,7 @@ export const NavbarContainer = styled.nav`
   padding: 10px 20px;
   top: 0;
   z-index: 1000;
-  position: fixed;
+  /* position: fixed; */
 `;
 
 export const Logo = styled.div`
@@ -24,6 +24,7 @@ align-items: center;
   img {
     height: 120px;
     margin-right: 10px;
+    overflow: hidden;
   }
 
   a {

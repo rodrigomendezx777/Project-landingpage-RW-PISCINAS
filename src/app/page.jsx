@@ -1,10 +1,69 @@
-import BannerCarousel from './components/layouts/CustomCarousel/BannerCarousel.component';
+import BannerCarousel from './components/layouts/BannerCarousel/BannerCarousel.component';
 import TestimonialCarousel from './components/Testimonials/TestimonialCarousel';
 import FAQAccordion from './components/FAQAccordion/FAQAccordion'
 import ProductList from './components/ProductList/ProductList.component'
+import RotatingProductGrid from './components/RotatingProduct/RotatingProductGrid'
+import Carousel from './components/layouts/CarouselProducts/Carousel'
 
 
 export default function Home() {
+  const items = [
+    {
+      image: "/images/Logo/logo_rw.png",
+      title: "Elegance Cardigan",
+      price: "From $10.00",
+    },
+    {
+      image: "/images/Logo/logo_rw.png",
+      title: "Harmony Coffee Table",
+      price: "From $10.00",
+    },
+    {
+      image: "/images/Logo/logo_rw.png",
+      title: "Pro Smartwatch",
+      price: "From $10.00",
+    },
+    {
+      image: "/images/Logo/logo_rw.png",
+      title: "Carmine Platform Sandals",
+      price: "From $10.00",
+    },
+    {
+      image: "/images/Logo/logo_rw.png",
+      title: "Carmine Platform Sandals",
+      price: "From $10.00",
+    },
+    {
+      image: "/images/Logo/logo_rw.png",
+      title: "Carmine Platform Sandals",
+      price: "From $10.00",
+    },
+    {
+      image: "/images/Logo/logo_rw.png",
+      title: "Carmine Platform Sandals",
+      price: "From $10.00",
+    },
+    {
+      image: "/images/Logo/logo_rw.png",
+      title: "Carmine Platform Sandals",
+      price: "From $10.00",
+    },
+    {
+      image: "/images/Logo/logo_rw.png",
+      title: "Carmine Platform Sandals",
+      price: "From $10.00",
+    },
+    {
+      image: "/images/Logo/logo_rw.png",
+      title: "Carmine Platform Sandals",
+      price: "From $10.00",
+    },
+    {
+      image: "/images/Logo/logo_rw.png",
+      title: "Carmine Platform Sandals",
+      price: "From $10.00",
+    },
+  ]
 
   const images = [
     '/images/banners/banner1.png',
@@ -25,8 +84,11 @@ export default function Home() {
 
   return (
   <>
+    
     <BannerCarousel images={images} />
+    <RotatingProductGrid />
     <TestimonialCarousel testimonials={testimonials} />
+    <Carousel items={items} />
     <ProductList />
     <FAQAccordion />
 

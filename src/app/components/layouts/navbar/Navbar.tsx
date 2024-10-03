@@ -39,13 +39,12 @@ const Navbar: React.FC = () => {
       <Logo> 
         <a href="/">
           <img src="/images/Logo/logo_rw.png" alt="Logo RW Piscinas" />
-          
-        </a>RW PISCINAS
+        </a>
       </Logo>
       <NavMenu>
-        <NavItem href="/">Home</NavItem>
+        <NavItem href="/modelos">Modelos</NavItem>
         <NavItem href="/About">Sobre</NavItem>
-        <NavItem href="/Modelos">Serviços</NavItem>
+        <NavItem href="/Servicos">Serviços</NavItem>
         <NavItem href="/Contact">Contato</NavItem>
       </NavMenu>
       <MobileMenuIcon onClick={toggleMenu}>

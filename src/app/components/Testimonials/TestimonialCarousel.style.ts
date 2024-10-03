@@ -4,7 +4,7 @@ export const TestimonialContainer = styled.div`
   width: 100%;
   max-width: 1000px;
   margin: 0 auto;
-  padding: 40px 20px;
+  /* padding: 40px ; */
 `;
 
 export const TestimonialItem = styled.div`

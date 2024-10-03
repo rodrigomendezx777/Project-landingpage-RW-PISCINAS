@@ -1,6 +1,6 @@
 'use client';
 
-import CustomCarousel from '../layouts/CustomCarousel/BannerCarousel.component';
+import CustomCarousel from '../layouts/BannerCarousel/BannerCarousel.component';
 
 const slides = [
   { id: 1, image: '/images/banners/banner1.png', alt: 'Banner 1 - Piscina pronta em 2 semanas' },
