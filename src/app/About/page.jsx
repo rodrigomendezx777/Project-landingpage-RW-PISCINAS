@@ -1,7 +1,7 @@
 import React from 'react'
 
-export default function Orçamentos() {
+export default function about() {
   return (
-    <div>meu pau</div>
+    <div>about</div>
   )
 }

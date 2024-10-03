@@ -56,7 +56,7 @@ const Navbar: React.FC = () => {
           <NavItem href="/">Home</NavItem>
           <NavItem href="/About">Sobre</NavItem>
           <NavItem href="/services">Serviços</NavItem>
-          <NavItem href="/Contact">Contato</NavItem>
+          <NavItem href="/Contact">Contatos</NavItem>
           <SocialIcons>
             <SocialIconLink href="https://www.instagram.com" target="_blank" aria-label="Instagram">
               <FaInstagram size={30} />
