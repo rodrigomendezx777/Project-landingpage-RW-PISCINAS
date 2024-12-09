@@ -58,13 +58,13 @@ const Navbar: React.FC = () => {
           <NavItem href="/services">Serviços</NavItem>
           <NavItem href="/Contact">Contatos</NavItem>
           <SocialIcons>
-            <SocialIconLink href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+            <SocialIconLink href="https://www.instagram.com/rwpiscinas_nova_iguacu/" target="_blank" aria-label="Instagram">
               <FaInstagram size={30} />
             </SocialIconLink>
-            <SocialIconLink href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+            <SocialIconLink href="https://www.facebook.com/profile.php?id=61559387644228" target="_blank" aria-label="Facebook">
               <FaFacebook size={30} />
             </SocialIconLink>
-            <SocialIconLink href="https://wa.me/" target="_blank" aria-label="WhatsApp">
+            <SocialIconLink href="https://wa.me/5521964290604" target="_blank" aria-label="WhatsApp">
               <FaWhatsapp size={30} />
             </SocialIconLink>
             <SocialIconLink href="https://www.tiktok.com" target="_blank" aria-label="TikTok">

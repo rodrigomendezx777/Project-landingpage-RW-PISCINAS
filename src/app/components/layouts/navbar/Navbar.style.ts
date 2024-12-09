@@ -4,21 +4,23 @@ import Link from 'next/link';
 export const NavbarContainer = styled.nav`
   width: 100%;
   height: 80px;
-  background-color: #333;
+  background-color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
   top: 0;
   z-index: 1000;
-  /* position: fixed; */
+  position: fixed;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 `;
 
 export const Logo = styled.div`
 display: flex;
 align-items: center;
-  color: #fff;
-  font-size: 1.5rem;
+  color: #010b54;
+  font-size: 1rem;
   font-weight: bold;
 
   img {
@@ -42,20 +44,23 @@ export const NavMenu = styled.div`
   }
 `;
 
+// texto do menu de navegaçao
 export const NavItem = styled(Link)`
-  color: #fff;
+  color: #010b54; //azul escuro
   text-decoration: none;
   margin: 0 15px;
   font-size: 1.5rem;
 
   &:hover {
-    color: #ff6347;
+    color: #f4bc33; // amarelo sol da rw
   }
 `;
 
+
+//icone do menu hamburger para mobile
 export const MobileMenuIcon = styled.div`
   display: none;
-  color: #fff;
+  color: #010b54; //azul escuro
   cursor: pointer;
 
   @media (max-width: 768px) {
@@ -68,7 +73,7 @@ export const MobileNavMenu = styled.div`
   top: 70px;
   left: 0;
   right: 0;
-  background-color: #333;
+  background-color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -79,13 +84,13 @@ export const MobileNavMenu = styled.div`
   z-index: 100;
 
   a {
-    color: #fff;
+    color: #010b54;
     text-decoration: none;
     margin: 10px 0;
     font-size: 1.6rem;
 
     &:hover {
-      color: #ff6347;
+      color: #f4bc33; // amarelo sol da rw
     }
   }
 
@@ -113,7 +118,7 @@ export const SocialIconLink = styled.a`
   margin: 0 10px;
   transition: color 0.3s ease;
 
-  &:hover {
-    color: #ff6347;
-  }
+  /* &:hover {
+    color: red;
+  } */
 `;
