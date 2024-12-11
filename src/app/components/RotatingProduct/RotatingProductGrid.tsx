@@ -6,7 +6,7 @@ import { piscinas } from './data';
 
 const RotatingProductGrid = () => {
   // Duplicando as piscinas para manter o loop contínuo
-  const duplicatedPiscinas = [...piscinas, ...piscinas];
+  const duplicatedPiscinas = [...piscinas, ...piscinas, ...piscinas];
 
   return (
     <Section>
@@ -19,11 +19,12 @@ const RotatingProductGrid = () => {
             </ImageContainer>
             <InfoContainer>
               <h1>{pool.name}</h1>
-              <p>{pool.dimensions}</p>
-              <p>R$ {pool.price.toLocaleString()}</p>
-              <p>
-                Ou {pool.installments}x de R$ {pool.installmentPrice.toLocaleString()} sem juros
-              </p>
+              <h4>{pool.dimensions}</h4>
+              Instalação Completa:
+              <h4>R$ {pool.price.toLocaleString()}</h4>
+              <h3>
+                Ou em {pool.installments}x de R$ {pool.installmentPrice.toLocaleString()} no cartão
+              </h3>
               <p>{pool.description}</p>
             </InfoContainer>
           </Card>

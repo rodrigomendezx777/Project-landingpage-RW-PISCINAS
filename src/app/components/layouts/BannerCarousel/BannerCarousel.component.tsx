@@ -5,10 +5,11 @@ import styled from 'styled-components';
 
 const CarouselContainer = styled.div`
   width: 100%;
-  /* max-width: 1920px; */
+  max-width: 1920px;
   margin: auto;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
   overflow: hidden;
+  background-color: #f4bc33;
+
 
   .slick-slide {
     transition: all 0.3s ease;

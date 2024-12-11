@@ -1,20 +1,27 @@
 import styled from 'styled-components';
 import Link from 'next/link';
 
-export const NavbarContainer = styled.nav`
+
+export const NavbarContainer = styled.nav<{ isVisible: boolean }>`
   width: 100%;
   height: 80px;
   background-color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 0 2rem;
   top: 0;
   z-index: 1000;
   position: fixed;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  transition: transform 0.3s ease; // Adiciona uma transição suave
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+
+  /* Esconde a navbar ao rolar para baixo */
+  transform: ${({ isVisible }) => (isVisible ? "translateY(0)" : "translateY(-100%)")};
 `;
+
 
 export const Logo = styled.div`
 display: flex;
@@ -47,14 +54,18 @@ export const NavMenu = styled.div`
 // texto do menu de navegaçao
 export const NavItem = styled(Link)`
   color: #010b54; //azul escuro
+  font-size: 18px;
+  font-weight: 700;
   text-decoration: none;
   margin: 0 15px;
-  font-size: 1.5rem;
+  
 
   &:hover {
     color: #f4bc33; // amarelo sol da rw
   }
 `;
+
+
 
 
 //icone do menu hamburger para mobile

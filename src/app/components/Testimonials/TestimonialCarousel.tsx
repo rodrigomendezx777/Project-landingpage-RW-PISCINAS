@@ -30,7 +30,7 @@ const TestimonialCarousel = ({ testimonials }: TestimonialCarouselProps) => {
     <TestimonialContainer>
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
-        autoplay={{ delay: 1000 }}
+        autoplay={{ delay: 3000 }}
         loop={true}
         pagination={{ clickable: true }}
         onSlideChange={handleSlideChange}
