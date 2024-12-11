@@ -4,6 +4,7 @@ import FAQAccordion from './components/FAQAccordion/FAQAccordion'
 import ProductList from './components/ProductList/ProductList.component'
 import RotatingProductGrid from './components/RotatingProduct/RotatingProductGrid'
 import CTASection  from './components/layouts/CTAContainer/CtaSection'
+import FeaturesSection from './components/layouts/FeatureSectionContainer/FeaturesSection'
 
 
 export default function Home() {
@@ -30,6 +31,7 @@ export default function Home() {
   <>
     <CTASection></CTASection>
     <BannerCarousel images={images} />
+    <FeaturesSection />
     <RotatingProductGrid />
     <TestimonialCarousel testimonials={testimonials} />
     <ProductList />
