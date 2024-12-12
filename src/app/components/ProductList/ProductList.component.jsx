@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useState } from 'react';
-import { ProductListContainer, ProductCard, ModalOverlay, ModalContent, CloseButton } from './ProductList.style';
+import { ProductListContainer, ProductCard, ModalOverlay, ModalContent, CloseButton,TitleCatalogPool } from './ProductList.style';
 
   const products = [
     {
@@ -181,7 +181,7 @@ const ProductList = () => {
 
   return (
     <div>
-      <h1>Catálogo de Piscinas</h1>
+      <TitleCatalogPool>Catálogo de Piscinas</TitleCatalogPool>
       <ProductListContainer>
         {products.map((product) => (
           <ProductCard

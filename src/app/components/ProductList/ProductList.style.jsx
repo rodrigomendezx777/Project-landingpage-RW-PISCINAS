@@ -1,11 +1,36 @@
 import styled from 'styled-components';
 
 
+export const TitleCatalogPool = styled.h1`
+  font-size: 4rem;
+  color: #f4bc33; // amarelo sol da rw
+  
+  text-align: center;
+  margin: 40px;
+  text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.5);
+  font-family: sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  
+  @media (max-width: 768px) {
+    font-size: 2.4rem;
+    text-align: center;
+  }
+
+  @media (max-width: 480px) {
+    text-align: center;
+    font-size: 2.5rem;
+    
+  }
+`;
+
 export const ProductListContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around; /* Ajusta o espaçamento entre os cards */
-  margin: 20px 20px; /* Adiciona margens para separação */
+  /* margin: 20px 20px; Adiciona margens para separação */
+  background-color: #f4bc33;
+  border-radius: 12px;
 `;
 
 export const ProductCard = styled.div`

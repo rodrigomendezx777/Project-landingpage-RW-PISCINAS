@@ -5,9 +5,13 @@ import ProductList from './components/ProductList/ProductList.component'
 import RotatingProductGrid from './components/RotatingProduct/RotatingProductGrid'
 import CTASection  from './components/layouts/CTAContainer/CtaSection'
 import FeaturesSection from './components/layouts/FeatureSectionContainer/FeaturesSection'
+import InstallationSteps from './components/InstallationSteps/InstallationSteps.component';
 
 
-export default function Home() {
+
+export default async function Home() {
+
+  await new Promise((resolve) => setTimeout(resolve, 5000));
 
 
   const images = [
@@ -34,6 +38,7 @@ export default function Home() {
     <FeaturesSection />
     <RotatingProductGrid />
     <TestimonialCarousel testimonials={testimonials} />
+    <InstallationSteps />
     <ProductList />
     <FAQAccordion />
 

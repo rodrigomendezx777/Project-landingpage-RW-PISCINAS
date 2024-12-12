@@ -31,6 +31,14 @@ const StyledWrapper = styled.div`
     transition: all 0.3s ease 0s;
     cursor: pointer;
     outline: none;
+
+    @media (max-width: 768px) {
+    font-size: 15px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 13px;
+  }
   }
 
   button:hover {
