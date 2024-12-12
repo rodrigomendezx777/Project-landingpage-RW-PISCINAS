@@ -19,10 +19,14 @@ const InstallationSteps = () => {
       <Title>COMO FUNCIONA A INSTALAÇÃO?</Title>
       <StepContainer>
         <VideoContainer>
-          <video controls>
-            <source src={stepsData[currentStep].video} type="video/mp4" />
-            Seu navegador não suporta vídeos.
-          </video>
+        <iframe
+            width="350"
+            height="600"
+            src="https://www.youtube.com/embed/4Po3IsP6UAk"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
         </VideoContainer>
         <DescriptionContainer>
           <h2>{`${currentStep + 1}. ${stepsData[currentStep].title}`}</h2>
@@ -78,7 +82,7 @@ const StepContainer = styled.div`
 `;
 
 const VideoContainer = styled.div`
-  max-width: 250px;
+  max-width: 500px;
   width: 100%;
 
   video {
